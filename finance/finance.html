@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- [Head] start -->
+
+<head>
+  <title>Finance Department Dashboard</title>
+  <!-- [Meta] -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Gradient Able is trending dashboard template made using Bootstrap 5 design framework. Gradient Able is available in Bootstrap, React, CodeIgniter, Angular,  and .net Technologies.">
+  <meta name="keywords" content="Bootstrap admin template, Dashboard UI Kit, Dashboard Template, Backend Panel, react dashboard, angular dashboard">
+  <meta name="author" content="codedthemes">
+
+  <!-- [Favicon] icon -->
+  <link rel="icon" href="../assets/images/favicon.svg" type="image/x-icon">
+  <!-- map-vector css -->
+  <link rel="stylesheet" href="../assets/css/plugins/jsvectormap.min.css">
+  <!-- [Google Font : Poppins] icon -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- [Tabler Icons] https://tablericons.com -->
+  <link rel="stylesheet" href="../assets/fonts/tabler-icons.min.css" >
+  <!-- [Feather Icons] https://feathericons.com -->
+  <link rel="stylesheet" href="../assets/fonts/feather.css" >
+  <!-- [Font Awesome Icons] https://fontawesome.com/icons -->
+  <link rel="stylesheet" href="../assets/fonts/fontawesome.css" >
+  <!-- [Material Icons] https://fonts.google.com/icons -->
+  <link rel="stylesheet" href="../assets/fonts/material.css" >
+  <!-- [Template CSS Files] -->
+  <link rel="stylesheet" href="../assets/css/style.css" id="main-style-link" >
+  <link rel="stylesheet" href="../assets/css/style-preset.css" >
+
+</head>
+<!-- [Head] end -->
+<!-- [Body] Start -->
+
+<body data-pc-header="header-1" data-pc-preset="preset-1" data-pc-sidebar-theme="light" data-pc-sidebar-caption="true" data-pc-direction="ltr" data-pc-theme="light">
+  <!-- [ Pre-loader ] start -->
+<div class="loader-bg">
+  <div class="loader-track">
+    <div class="loader-fill"></div>
+  </div>
+</div>
+<!-- [ Pre-loader ] End -->
+ <!-- [ Sidebar Menu ] start -->
+<nav class="pc-sidebar">
+  <div class="navbar-wrapper">
+    <div class="m-header">
+      <a href="#" class="b-brand text-primary">
+        <!-- ========   Change your logo from here   ============ -->
+        <img src="../assets/images/logo-white.png" alt="logo image" class="logo-lg">
+      </a>
+    </div>
+    <div class="navbar-content">
+      <ul class="pc-navbar">
+        
+        <li class="pc-item">
+          <a href="#" class="pc-link"
+            ><span class="pc-micon">
+              <i class="ph ph-gauge"></i></span
+            ><span class="pc-mtext">Dashboard</span></a>
+        </li>
+        <li class="pc-item">
+          <a href="#" class="pc-link"
+            ><span class="pc-micon">
+              <i class="ph ph-gauge"></i></span
+            ><span class="pc-mtext">Disbursements</span></a>
+        </li>
+        <li class="pc-item">
+          <a href="#" class="pc-link"
+            ><span class="pc-micon">
+              <i class="ph ph-gauge"></i></span
+            ><span class="pc-mtext">Reports</span></a>
+        </li>
+        <li class="pc-item">
+          <a href="#" class="pc-link"
+            ><span class="pc-micon">
+              <i class="ph ph-gauge"></i></span
+            ><span class="pc-mtext">Settings</span></a>
+        </li>
+      
+
+       
+        <li class="pc-item pc-caption">
+          <label>Other</label>
+          <i class="ph ph-suitcase"></i>
+        </li>
+        <li class="pc-item">
+          <a href="../index.html" class="pc-link">
+            <span class="pc-micon"><i class="ph ph-lock"></i></span>
+            <span class="pc-mtext">Logout</span>
+          </a>
+        </li>
+       
+      </ul>
+     
+    </div>
+  </div>
+</nav>
+<!-- [ Sidebar Menu ] end --> <!-- [ Header Topbar ] start -->
+<header class="pc-header">
+  <div class="m-header">
+    <a href="#" class="b-brand text-primary">
+      <!-- ========   Change your logo from here   ============ -->
+      <img src="../assets/images/logo-white.png" alt="logo image" class="logo-lg">
+    </a>
+  </div>
+  <div class="header-wrapper"> <!-- [Mobile Media Block] start -->
+<div class="me-auto pc-mob-drp">
+  <ul class="list-unstyled">
+    <!-- ======= Menu collapse Icon ===== -->
+    <li class="pc-h-item pc-sidebar-collapse">
+      <a href="#" class="pc-head-link ms-0" id="sidebar-hide">
+        <i class="ph ph-list"></i>
+      </a>
+    </li>
+    <li class="pc-h-item pc-sidebar-popup">
+      <a href="#" class="pc-head-link ms-0" id="mobile-collapse">
+        <i class="ph ph-list"></i>
+      </a>
+    </li>
+    <li class="dropdown pc-h-item">
+      <a class="pc-head-link dropdown-toggle arrow-none m-0" data-bs-toggle="dropdown" href="#" role="button"
+        aria-haspopup="false" aria-expanded="false">
+        <i class="ph ph-magnifying-glass"></i>
+      </a>
+      <div class="dropdown-menu pc-h-dropdown drp-search">
+        <form class="px-3">
+          <div class="form-group mb-0 d-flex align-items-center">
+            <input type="search" class="form-control border-0 shadow-none" placeholder="Search here. . .">
+            <button class="btn btn-light-secondary btn-search">Search</button>
+          </div>
+        </form>
+      </div>
+    </li>
+  </ul>
+</div>
+<!-- [Mobile Media Block end] -->
+<div class="ms-auto">
+  <ul class="list-unstyled">
+    <li class="dropdown pc-h-item header-user-profile">
+      <a class="pc-head-link dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown" href="#" role="button"
+        aria-haspopup="false" data-bs-auto-close="outside" aria-expanded="false">
+        <img src="../assets/images/user/avatar-2.jpg" alt="user-image" class="user-avtar">
+      </a>
+      <div class="dropdown-menu dropdown-user-profile dropdown-menu-end pc-h-dropdown">
+        <div class="dropdown-body">
+          <div class="profile-notification-scroll position-relative" style="max-height: calc(100vh - 225px)">
+            <ul class="list-group list-group-flush w-100">
+              <li class="list-group-item">
+                <a href="#" class="dropdown-item">
+                  <span class="d-flex align-items-center">
+                    <span id="ID">USER</span>
+                  </span>
+                </a>
+              </li>
+              <li class="list-group-item">
+                <a href="#" class="dropdown-item">
+                  <span class="d-flex align-items-center">
+                    <i class="ph ph-user-circle"></i>
+                    <span>Edit profile</span>
+                  </span>
+                </a>
+                <a href="#" class="dropdown-item">
+                  <span class="d-flex align-items-center">
+                    <i class="ph ph-bell"></i>
+                    <span>Notifications</span>
+                  </span>
+                </a>
+                <a href="#" class="dropdown-item">
+                  <span class="d-flex align-items-center">
+                    <i class="ph ph-gear-six"></i>
+                    <span>Settings</span>
+                  </span>
+                </a>
+              </li>
+              <li class="list-group-item">
+                <a href="#" class="dropdown-item">
+                  <span class="d-flex align-items-center">
+                    <i class="ph ph-plus-circle"></i>
+                    <span>Add account</span>
+                  </span>
+                </a>
+                <a href="#" class="dropdown-item">
+                  <span class="d-flex align-items-center">
+                    <i class="ph ph-power"></i>
+                    <span>Logout</span>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div> </div>
+</header>
+<!-- [ Header ] end -->
+
+
+
+  <!-- [ Main Content ] start -->
+  <div class="pc-container">
+    <div class="pc-content">
+      <!-- [ Main Content ] start -->
+      <div class="row">
+        <div class="col-md-6 col-xl-3">
+          <div class="card bg-grd-primary order-card">
+            <div class="card-body">
+              <h6 class="text-white">Total Budget Applications</h6>
+              <h2 class="text-end text-white">
+                  <i class="feather icon-tag float float-start"></i>
+                  <span id="total-budget-count">Loading...</span>
+              </h2>
+              <p class="m-b-0">
+                  Approved budgets
+                  <span class="float-end" id="approved-budget-count">Loading...</span>
+              </p>
+          </div>
+          
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-3">
+          <div class="card bg-grd-success order-card">
+            <div class="card-body">
+              <h6 class="text-white">Implementing Partners</h6>
+              <h2 class="text-end text-white"><i class="feather icon-users float-start"></i><span>6</span>
+              </h2>
+              <p class="m-b-0">Active<span class="float-end">2</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-3">
+          <div class="card bg-grd-warning order-card">
+            <div class="card-body">
+              <h6 class="text-white">Total Amount Approved</h6>
+              <h2 class="text-end text-white">
+                <i class="feather icon-dollar-sign float-start"></i>
+                <span id="total-budget-amount">Loading...</span>
+            </h2>
+            
+              <p class="m-b-0">Total Disbursed<span class="float-end">$0</span></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xl-3">
+          <div class="card bg-grd-danger order-card">
+            <div class="card-body">
+              <h6 class="text-white">Total Funds Allocated</h6>
+              <h2 class="text-end text-white"><i class="feather icon-dollar-sign float-start"></i><span>$200,562</span></h2>
+              <p class="m-b-0">Funds available<span class="float-end">$60000</span></p>
+            </div>
+          </div>
+        </div>
+       
+
+        <!-- Recent Orders start -->
+        <div class="col-sm-12">
+          <div class="card table-card">
+            <div class="card-header">
+              <h5>Recent Submissions</h5>
+            </div>
+            <div class="card-body p-0">
+              <div class="table-responsive">
+                <table class="table">
+                  <tr>
+                    <th>Project Name</th>
+                    <th>Budget Year</th>
+                    <th>Currency</th>
+                    <th>Budget Amount</th>
+                    <th>Purpose</th>
+                    <th>Submitted by</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                  </tr>
+                  <tr>
+                    <td>Project Alpha</td>
+                    <td>2024</td>
+                    <td>USD</td>
+                    <td>100,000</td>
+                    <td>Marketing Campaign</td>
+                    <td>2</td>
+                    <td>Submitted</td>
+                    <td>
+                        <button class="btn btn-success approve-btn" data-budget-id="1">Approve</button>
+                        <button class="btn btn-danger reject-btn" data-budget-id="1">Reject</button>
+                    </td>
+                  </tr>
+                 
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Recent Orders end -->
+      </div>
+      <!-- [ Main Content ] end -->
+    </div>
+  </div>
+  <!-- [ Main Content ] end -->
+  <footer class="pc-footer">
+    <div class="footer-wrapper container-fluid">
+      <div class="row">
+        <div class="col-sm-6 my-1">
+          <p class="m-0">EU Budget Accounting &#9829; crafted by <a href="http://miwalletmw.com/"
+              target="_blank">Mi WALLET</a></p>
+        </div>
+        <div class="col-sm-6 ms-auto my-1">
+          <ul class="list-inline footer-link mb-0 justify-content-sm-end d-flex">
+            <li class="list-inline-item"><a href="#">Home</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer> 
+  <!-- [Page Specific JS] start -->
+  <script src="../assets/js/plugins/apexcharts.min.js"></script>
+  <script src="../assets/js/plugins/jsvectormap.min.js"></script>
+  <script src="../assets/js/plugins/world.js"></script>
+  <script src="../assets/js/plugins/world-merc.js"></script>
+  <script src="../assets/js/pages/dashboard-sales.js"></script>
+  <!-- [Page Specific JS] end -->
+  <!-- Required Js -->
+  <script src="../assets/js/plugins/popper.min.js"></script>
+  <script src="../assets/js/plugins/simplebar.min.js"></script>
+  <script src="../assets/js/plugins/bootstrap.min.js"></script>
+  <script src="../assets/js/fonts/custom-font.js"></script>
+  <script src="../assets/js/pcoded.js"></script>
+  <script src="../assets/js/plugins/feather.min.js"></script>
+  <script src="../js/finance.js"></script>
+
+
+  
+  
+  
+  
+  <script>layout_change('light');</script>
+  
+  
+  
+  
+  <script>layout_sidebar_change('light');</script>
+  
+  
+  
+  <script>change_box_container('false');</script>
+  
+  
+  <script>layout_caption_change('true');</script>
+  
+  
+  
+  
+  <script>layout_rtl_change('false');</script>
+  
+  
+  <script>preset_change("preset-1");</script>
+  
+  
+  <script>header_change("header-1");</script>
+  
+</body>
+<!-- [Body] end -->
+
+</html>

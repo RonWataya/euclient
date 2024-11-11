@@ -7,7 +7,7 @@ if (!userData || userData.role !== 'Finance Department') {
 }
 
 // Select table body to display budget entries
-const budgetTableBody = document.querySelector('.table tbody');
+const budgetTableBody = document.getElementById('budget-table-body');
 
 // Function to fetch budget data from backend
 function fetchBudgets() {
